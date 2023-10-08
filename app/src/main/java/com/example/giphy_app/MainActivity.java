@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RequestQueue requestQueue;
     private List<Gif> gifList;
-    private Handler handler = new Handler(Looper.getMainLooper());
+    private final Handler handler = new Handler(Looper.getMainLooper());
     private final int REQUEST_DELAY_MILLISECONDS = 300;
     private GifAdapter adapter;
     private int offset = 0;
-    private int limit = 10;
+    private final int limit = 10;
     private boolean isLoading = false;
     private GifApiClient gifApiClient;
 
